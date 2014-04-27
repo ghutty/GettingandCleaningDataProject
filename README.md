@@ -18,7 +18,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 ### Assumptions
 
-* Ignored raw data in __"/Inertial Signals"__ as data files available in __"/test"__ and __"/train"__ folders produce an acceptable result.  Total 68 Variables including __Subject__ and __Activity__.  Result 10299 obs. of 563 variables
+* Ignored raw data in __"/Inertial Signals"__ as data files available in __"/test"__ and __"/train"__ folders produce an acceptable result.  Total 563 variables with 561 features + __Subject__ and __Activity__.  Result 10299 obs. of 563 variables
 * The features required are mean() and std() which will result in 66 Variables.  Total 68 Variables including __Subject__ and __Activity__.  Result 10299 obs. of 68 variables
 * _"Uses descriptive activity names to name the activities in the data set"_, rename column names for the features
 * _"Appropriately labels the data set with descriptive activity names."_, replace activity code to activity names as data values
