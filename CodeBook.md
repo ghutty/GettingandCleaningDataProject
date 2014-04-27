@@ -44,18 +44,16 @@ The set of variables that were estimated from these signals are:
 
 -----------
 
-####1   Subject
-Participants Subject ID.  Total 30 Subjects
+__1   Subject__ - Participants Subject ID.  Total 30 Subjects
 
-####2   Activity
-6 Activities
+__2   Activity__ - 6 Activities
 
-LAYING(30,17%)
-SITTING(30,17%)
-STANDING(30,17%)
-WALKING(30,17%)
-WALKING DOWNSTAIRS(30,17%)
-WALKING UPSTAIRS(30,17%)
+* LAYING(30,17%)
+* SITTING(30,17%)
+* STANDING(30,17%)
+* WALKING(30,17%)
+* WALKING DOWNSTAIRS(30,17%)
+* WALKING UPSTAIRS(30,17%)
 
 ####3   tBodyAccMeanX
 ####4   tBodyAccMeanY
