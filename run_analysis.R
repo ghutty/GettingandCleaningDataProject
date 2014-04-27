@@ -1,4 +1,11 @@
-
+### 
+### run_analysis.R
+###
+### Requirements
+### 1. Download "getdata-projectfiles-UCI HAR Dataset.zip" from the link above.
+###    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+### 2. Unzip "getdata-projectfiles-UCI HAR Dataset.zip"
+### 3. Place "run_analysis.R" R script in "UCI HAR Dataset" folder where "test" and "train" folders reside.
 
 ## 1.  Merges the training and the test sets to create one data set.
 
