@@ -6,7 +6,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 [Site description where data was obtained](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-[UCI HAR Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+[getdata-projectfiles-UCI HAR Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
 
@@ -19,9 +19,9 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 ### Requirements
 
-1. Download __"UCI HAR Dataset.zip"__ from the link above.
-2. Unzip __"UCI HAR Dataset.zip"__
-3. Place __run_analysis.R__ R script in __"UCI HAR Dataset"__ folder where __"test"__ and __"train"__ folders reside.
+1. Download __"getdata-projectfiles-UCI HAR Dataset.zip"__ from the link above.
+2. Unzip __"getdata-projectfiles-UCI HAR Dataset.zip"__
+3. Place __"run_analysis.R"__ R script in __"UCI HAR Dataset"__ folder where __"test"__ and __"train"__ folders reside.
 
 
 ### run_analysis.R
