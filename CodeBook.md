@@ -72,37 +72,22 @@ The complete list of variables of each feature vector is available in 'features.
 * _"Appropriately labels the data set with descriptive activity names."_, replace activity code to activity names as data values
 * Create tidy dataset with the average of each variable for each activity (6) and each subject (30).  Result 30 Subjects x 6 activities = 180 obs. of 68 variables
 
+-----------
 
 ###tidydata
+-----------
+-----------
 
 * 68 Variables
 * 180 Observations
 
-###Subject
-Participants Subject ID.  Total 30 Subjects
-
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    1.0     8.0    15.5    15.5    23.0    30.0  
-
-    
-####Activity - 6 Activities
-
-LAYING(30,17%)
-SITTING(30,17%)
-STANDING(30,17%)
-WALKING(30,17%)
-WALKING DOWNSTAIRS(30,17%)
-WALKING UPSTAIRS(30,17%)
-
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    1.0     8.0    15.5    15.5    23.0    30.0 
-
-
+-----------
 
 ####1   Subject
 Participants Subject ID.  Total 30 Subjects
 
 ####2   Activity
+6 Activities
 
 LAYING(30,17%)
 SITTING(30,17%)
