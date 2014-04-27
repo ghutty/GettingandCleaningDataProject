@@ -1,14 +1,14 @@
 ##CodeBook.md
 
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly\n the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-Subsequently\n the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag\n tGravityAccMag\n tBodyAccJerkMag\n tBodyGyroMag\n tBodyGyroJerkMag). 
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ\n fBodyAccJerk-XYZ\n fBodyGyro-XYZ\n fBodyAccJerkMag\n fBodyGyroMag\n fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X\n Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -64,413 +64,87 @@ The complete list of variables of each feature vector is available in 'features.
 * 68 Variables
 * 180 Observations
 
-####Subject
-nmissinguniqueMean.05.10.25.50.75.90.95
-18003015.52.03.98.015.523.027.129.0
-
-lowest:12345\nhighest:2627282930
-
-####Activity
-nmissingunique
-18006
-
-LAYING(30,17%)\nSITTING(30,17%)\nSTANDING(30,17%)\nWALKING(30,17%)\nWALKINGDOWNSTAIRS(30,17%)
-WALKINGUPSTAIRS(30,17%)
-
-####tBodyAccMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-18001800.27430.24990.25820.27120.27700.28000.28870.2934
-
-lowest:0.22160.23330.23950.24210.2472\nhighest:0.29560.29590.29610.29750.3015
-
-####tBodyAccMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.01788-0.028267-0.026875-0.020022-0.017262-0.014936-0.011234-0.008478
-
-lowest:-0.040514-0.032527-0.032411-0.032384-0.031980\nhighest:-0.006726-0.005877-0.005630-0.003503-0.001308
-
-tBodyAccMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.1092-0.12523-0.12131-0.11207-0.10819-0.10443-0.09975-0.09723
-
-lowest:-0.15251-0.15105-0.14377-0.13370-0.13312\nhighest:-0.09103-0.08924-0.08914-0.08683-0.07538
-
-tBodyAccStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5577-0.99190-0.98896-0.97987-0.75256-0.198380.048340.18870
-
-lowest:-0.9961-0.9958-0.9950-0.9944-0.9943\nhighest:0.29570.34860.38370.40650.6269
-
-tBodyAccStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.4605-0.97320-0.96331-0.94205-0.50897-0.030770.165430.30163
-
-lowest:-0.9902-0.9862-0.9837-0.9832-0.9831\nhighest:0.37890.38080.48980.51480.6169
-
-tBodyAccStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5756-0.97768-0.96785-0.94981-0.65176-0.23064-0.073670.05427
-
-lowest:-0.9877-0.9873-0.9866-0.9864-0.9847\nhighest:0.15960.16420.22990.45160.6090
-
-tGravityAccMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-18001800.6975-0.4726-0.34800.83760.92080.94250.95810.9652
-
-lowest:-0.6800-0.6213-0.5803-0.5304-0.5098\nhighest:0.96690.96860.96910.97260.9745
-
-tGravityAccMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.01621-0.35671-0.32299-0.23319-0.127820.087730.634880.80303
-
-lowest:-0.4799-0.4323-0.4162-0.3871-0.3829\nhighest:0.89920.91520.94300.95490.9566
-
-tGravityAccMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-18001800.07413-0.29482-0.20865-0.117260.023840.149460.532760.71997
-
-lowest:-0.4951-0.4225-0.4036-0.3926-0.3791\nhighest:0.84540.89390.90750.91880.9579
-
-tGravityAccStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.9638-0.9928-0.9892-0.9825-0.9695-0.9509-0.9343-0.9211
-
-lowest:-0.9968-0.9964-0.9945-0.9943-0.9940\nhighest:-0.8997-0.8968-0.8877-0.8621-0.8296
-
-tGravityAccStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.9524-0.9861-0.9812-0.9711-0.9590-0.9370-0.9186-0.9104
-
-lowest:-0.9942-0.9941-0.9937-0.9935-0.9908\nhighest:-0.9039-0.9013-0.9010-0.9005-0.6436
-
-tGravityAccStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.9364-0.9833-0.9762-0.9605-0.9450-0.9180-0.8941-0.8761
-
-lowest:-0.9910-0.9894-0.9891-0.9888-0.9858\nhighest:-0.8624-0.8588-0.8524-0.8369-0.6102
-
-tBodyAccJerkMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-18001800.079470.062750.069480.073960.076400.083300.096920.10370
-
-lowest:0.042690.042860.045760.054160.05610\nhighest:0.110660.111470.118250.118940.13019
-
-tBodyAccJerkMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-18001800.007565-0.0163276-0.00982470.00046640.00946980.01340080.02271680.0284955
-
-lowest:-0.03869-0.03802-0.02140-0.02106-0.02069\nhighest:0.036710.037500.039720.039990.05682
-
-tBodyAccJerkMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.004953-0.029383-0.021055-0.010601-0.0038610.0019580.0079390.015935
-
-lowest:-0.06746-0.05134-0.04556-0.03944-0.03601\nhighest:0.020820.021340.024380.031670.03805
-
-tBodyAccJerkStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5949-0.99201-0.98921-0.98318-0.81036-0.22328-0.011910.03843
-
-lowest:-0.9946-0.9943-0.9937-0.9935-0.9928\nhighest:0.16530.19890.22330.25010.5443
-
-tBodyAccJerkStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5654-0.985101-0.982450-0.972399-0.775640-0.1483310.0088610.083222
-
-lowest:-0.9895-0.9886-0.9886-0.9872-0.9867\nhighest:0.24430.27650.28810.28970.3553
-
-tBodyAccJerkStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.736-0.9900-0.9882-0.9827-0.8837-0.5121-0.3583-0.3027
-
-lowest:-0.99329-0.99225-0.99122-0.99066-0.99059\nhighest:-0.13363-0.02931-0.02001-0.013510.03102
-
-tBodyGyroMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.03244-0.12654-0.10546-0.04712-0.02871-0.016760.025040.07186
-
-lowest:-0.20578-0.16397-0.15983-0.14110-0.13878\nhighest:0.090330.093200.095790.134980.19270
-
-tBodyGyroMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.07426-0.13993-0.11159-0.08955-0.07318-0.06113-0.03440-0.01348
-
-lowest:-0.204205-0.181458-0.174651-0.166170-0.158903\nhighest:0.0071060.0139020.0162150.0212250.027471
-
-tBodyGyroMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-18001800.087440.024670.057380.074750.085120.101770.138680.14871
-
-lowest:-0.072455-0.044138-0.032556-0.007793-0.005468\nhighest:0.1559200.1598940.1639630.1697200.179102
-
-tBodyGyroStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6916-0.9888-0.9860-0.9735-0.7890-0.4414-0.3206-0.2657
-
-lowest:-0.99428-0.99287-0.99196-0.99103-0.99033\nhighest:-0.20494-0.19921-0.19830-0.026440.26766
-
-tBodyGyroStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6533-0.984292-0.980495-0.962933-0.801684-0.419584-0.1447500.006918
-
-lowest:-0.99421-0.99275-0.99036-0.98833-0.98773\nhighest:0.056990.085830.213830.259460.47652
-
-tBodyGyroStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6164-0.98128-0.97490-0.96095-0.80100-0.31061-0.15713-0.07344
-
-lowest:-0.9855-0.9851-0.9848-0.9839-0.9834\nhighest:0.15970.18410.33750.35620.5649
-
-tBodyGyroJerkMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.09606-0.14100-0.12280-0.10322-0.09868-0.09110-0.06470-0.05142
-
-lowest:-0.15721-0.15545-0.14845-0.14839-0.14680\nhighest:-0.03374-0.02665-0.02647-0.02565-0.02209
-
-tBodyGyroJerkMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.04269-0.06096-0.05282-0.04552-0.04112-0.03842-0.03463-0.03025
-
-lowest:-0.07681-0.07406-0.07360-0.07198-0.07083\nhighest:-0.02755-0.02077-0.01898-0.01411-0.01320
-
-tBodyGyroJerkMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.0548-0.07399-0.07033-0.06172-0.05343-0.04898-0.04116-0.03594
-
-lowest:-0.092500-0.090300-0.086790-0.078947-0.078844\nhighest:-0.027046-0.023633-0.022348-0.013724-0.006941
-
-tBodyGyroJerkStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7036-0.9933-0.9914-0.9800-0.8396-0.4629-0.2676-0.2166
-
-lowest:-0.99654-0.99610-0.99588-0.99526-0.99417\nhighest:-0.17084-0.163940.039340.080120.17915
-
-tBodyGyroJerkStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7636-0.9930-0.9909-0.9832-0.8942-0.5861-0.4238-0.2831
-
-lowest:-0.99708-0.99557-0.99553-0.99532-0.99514\nhighest:-0.12755-0.07045-0.014630.146650.29595
-
-tBodyGyroJerkStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7096-0.9926-0.9903-0.9848-0.8610-0.4741-0.3239-0.2123
-
-lowest:-0.995381-0.994909-0.994465-0.993841-0.993760\nhighest:-0.0344220.0030790.0913860.1166460.193206
-
-tBodyAccMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.4973-0.9781-0.9726-0.9573-0.4829-0.09190.11500.1920
-
-lowest:-0.9865-0.9865-0.9849-0.9847-0.9843\nhighest:0.25080.32040.33100.33380.6446
-
-tBodyAccMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5439-0.9729-0.9652-0.9430-0.6074-0.20900.11940.2059
-
-lowest:-0.9865-0.9819-0.9817-0.9816-0.9816\nhighest:0.26510.35320.37360.41350.4284
-
-tGravityAccMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.4973-0.9781-0.9726-0.9573-0.4829-0.09190.11500.1920
-
-lowest:-0.9865-0.9865-0.9849-0.9847-0.9843\nhighest:0.25080.32040.33100.33380.6446
-
-tGravityAccMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5439-0.9729-0.9652-0.9430-0.6074-0.20900.11940.2059
-
-lowest:-0.9865-0.9819-0.9817-0.9816-0.9816\nhighest:0.26510.35320.37360.41350.4284
-
-tBodyAccJerkMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6079-0.98956-0.98782-0.98074-0.81678-0.24561-0.08853-0.01680
-
-lowest:-0.9928-0.9927-0.9924-0.9917-0.9909\nhighest:0.10380.10950.11300.26260.4345
-
-tBodyAccJerkMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5842-0.98922-0.98654-0.97655-0.80138-0.21726-0.025240.09602
-
-lowest:-0.9946-0.9931-0.9914-0.9912-0.9905\nhighest:0.20950.22960.25340.29210.4506
-
-tBodyGyroMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5652-0.96868-0.96305-0.94613-0.65508-0.21589-0.067580.04386
-
-lowest:-0.9807-0.9807-0.9800-0.9782-0.9776\nhighest:0.10000.16630.16640.36580.4180
-
-tBodyGyroMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6304-0.97159-0.96396-0.94763-0.74204-0.36021-0.20125-0.06552
-
-lowest:-0.98137-0.98056-0.97869-0.97768-0.97707\nhighest:-0.021850.054000.163350.237820.29998
-
-tBodyGyroJerkMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7364-0.9937-0.9922-0.9852-0.8648-0.5119-0.3690-0.2944
-
-lowest:-0.99732-0.99633-0.99539-0.99497-0.99487\nhighest:-0.12619-0.08294-0.046310.011530.08758
-
-tBodyGyroJerkMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.755-0.9922-0.9903-0.9805-0.8809-0.5767-0.4368-0.2755
-
-lowest:-0.99767-0.99491-0.99487-0.99473-0.99445\nhighest:-0.11123-0.09534-0.043900.059490.25017
-
-fBodyAccMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5758-0.99063-0.98827-0.97869-0.76909-0.217440.024670.10464
-
-lowest:-0.9952-0.9950-0.9940-0.9938-0.9931\nhighest:0.20540.21570.23530.32830.5370
-
-fBodyAccMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.4887-0.97429-0.96813-0.95361-0.59498-0.063410.113710.22765
-
-lowest:-0.9890-0.9849-0.9837-0.9829-0.9821\nhighest:0.37150.38840.40350.49450.5242
-
-fBodyAccMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6297-0.98305-0.97492-0.96195-0.72360-0.31834-0.17701-0.07283
-
-lowest:-0.9895-0.9886-0.9877-0.9874-0.9853\nhighest:0.11070.15960.19170.28050.2807
-
-fBodyAccStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5522-0.9924-0.9892-0.9820-0.7470-0.19660.05080.2509
-
-lowest:-0.9966-0.9960-0.9956-0.9949-0.9947\nhighest:0.33660.40290.40340.46630.6585
-
-fBodyAccStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.4815-0.97363-0.96414-0.94042-0.51338-0.079130.115190.23447
-
-lowest:-0.9907-0.9867-0.9846-0.9843-0.9833\nhighest:0.32480.35610.42790.43840.5602
-
-fBodyAccStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5824-0.9758-0.9659-0.9459-0.6441-0.2655-0.09440.0864
-
-lowest:-0.9872-0.9866-0.9864-0.9860-0.9849\nhighest:0.13330.13380.20310.42760.6871
-
-fBodyAccJerkMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6139-0.992031-0.989238-0.982838-0.812641-0.281954-0.038246-0.004982
-
-lowest:-0.9946-0.9945-0.9937-0.9934-0.9927\nhighest:0.13810.18140.20150.21480.4743
-
-fBodyAccJerkMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5882-0.98524-0.98217-0.97254-0.78166-0.19631-0.055510.03334
-
-lowest:-0.9894-0.9883-0.9882-0.9871-0.9863\nhighest:0.16000.16480.20580.22060.2767
-
-fBodyAccJerkMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7144-0.9881-0.9861-0.9796-0.8707-0.4697-0.2962-0.2419
-
-lowest:-0.99202-0.99075-0.98956-0.98912-0.98883\nhighest:-0.05720-0.024880.058610.059590.15778
-
-fBodyAccJerkStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6121-0.99255-0.99005-0.98472-0.82539-0.24753-0.071470.01913
-
-lowest:-0.99507-0.99461-0.99422-0.99412-0.99368\nhighest:0.090840.108060.156910.172660.47680
-
-fBodyAccJerkStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5707-0.986121-0.984074-0.973699-0.785152-0.168540-0.0070670.095277
-
-lowest:-0.9905-0.9900-0.9899-0.9882-0.9882\nhighest:0.27390.29310.31590.34120.3498
-
-fBodyAccJerkStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7565-0.9902-0.9887-0.9837-0.8951-0.5438-0.4013-0.3425
-
-lowest:-0.993108-0.992350-0.991450-0.991316-0.990818\nhighest:-0.190752-0.098520-0.098393-0.084667-0.006236
-
-fBodyGyroMeanX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6367-0.9870-0.9834-0.9697-0.7300-0.3387-0.1954-0.1254
-
-lowest:-0.99312-0.99244-0.99014-0.98996-0.98841\nhighest:-0.06296-0.030000.063370.228140.47496
-
-fBodyGyroMeanY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6767-0.9862-0.9831-0.9700-0.8141-0.4458-0.2157-0.1028
-
-lowest:-0.9940-0.9937-0.9916-0.9903-0.9890\nhighest:0.11610.11870.14710.19560.3288
-
-fBodyGyroMeanZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6044-0.980874-0.975842-0.962424-0.790931-0.263481-0.130501-0.008592
-
-lowest:-0.9860-0.9860-0.9850-0.9842-0.9837\nhighest:0.16600.19670.21070.25700.4924
-
-fBodyGyroStdX
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.711-0.9896-0.9869-0.9750-0.8086-0.4813-0.3570-0.3083
-
-lowest:-0.9947-0.9930-0.9926-0.9913-0.9910\nhighest:-0.2784-0.2534-0.2343-0.10840.1966
-
-fBodyGyroStdY
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6454-0.9835-0.9789-0.9602-0.7964-0.4154-0.14820.0746
-
-lowest:-0.9944-0.9922-0.9896-0.9873-0.9871\nhighest:0.15150.17170.23430.28660.6462
-
-fBodyGyroStdZ
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6577-0.9828-0.9769-0.9643-0.8224-0.3916-0.2368-0.1648
-
-lowest:-0.98673-0.98648-0.98573-0.98532-0.98471\nhighest:0.018310.095480.182790.263200.52245
-
-fBodyAccMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5365-0.9752-0.9724-0.9560-0.6703-0.16220.11420.2202
-
-lowest:-0.9868-0.9868-0.9854-0.9848-0.9845\nhighest:0.33120.36480.39600.47190.5866
-
-fBodyAccMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.621-0.9751406-0.9676112-0.9451633-0.6512629-0.3654056-0.07377390.0005175
-
-lowest:-0.98765-0.98231-0.98225-0.98223-0.98160\nhighest:0.082860.088870.144620.153120.17868
-
-fBodyBodyAccJerkMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5756-0.98879-0.98590-0.97697-0.79405-0.187230.011150.07877
-
-lowest:-0.9940-0.9925-0.9914-0.9904-0.9902\nhighest:0.22220.24380.33150.33500.5384
-
-fBodyBodyAccJerkMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.5992-0.98858-0.98630-0.97520-0.81262-0.26682-0.022270.08048
-
-lowest:-0.9944-0.9925-0.9910-0.9903-0.9903\nhighest:0.15830.19430.22450.22750.3163
-
-fBodyBodyGyroMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6671-0.9799-0.9743-0.9616-0.7657-0.4087-0.2643-0.1003
-
-lowest:-0.9865352-0.9846176-0.9843291-0.9842911-0.9840013\nhighest:-0.00036270.04885890.15082570.18507820.2039798
-
-fBodyBodyGyroMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.6723-0.9718-0.9637-0.9488-0.7727-0.4277-0.3043-0.1833
-
-lowest:-0.98147-0.98125-0.97847-0.97744-0.97726\nhighest:-0.14160-0.07433-0.061480.032040.23666
-
-fBodyBodyGyroJerkMagMean
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7564-0.9924-0.9905-0.9813-0.8779-0.5831-0.4450-0.2662
-
-lowest:-0.99762-0.99520-0.99506-0.99482-0.99481\nhighest:-0.13271-0.12518-0.022900.074680.14662
-
-fBodyBodyGyroJerkMagStd
-nmissinguniqueMean.05.10.25.50.75.90.95
-1800180-0.7715-0.9922-0.9907-0.9802-0.8941-0.6081-0.4530-0.3427
-
-lowest:-0.99759-0.99497-0.99474-0.99467-0.99421\nhighest:-0.14573-0.14325-0.08417-0.039860.28783
+####Subject - Participants Subject ID.  Total 30 Subjects
+
+ Min.   : 1.0   
+ 1st Qu.: 8.0   
+ Median :15.5   
+ Mean   :15.5   
+ 3rd Qu.:23.0   
+ Max.   :30.0   
+
+    
+####Activity - 6 Activities
+
+LAYING(30,17%)
+SITTING(30,17%)
+STANDING(30,17%)
+WALKING(30,17%)
+WALKING DOWNSTAIRS(30,17%)
+WALKING UPSTAIRS(30,17%)
+
+    Subject       Activity         tBodyAccMeanX    tBodyAccMeanY       tBodyAccMeanZ       tBodyAccStdX      tBodyAccStdY       tBodyAccStdZ    
+ Min.   : 1.0   Length:180         Min.   :0.2216   Min.   :-0.040514   Min.   :-0.15251   Min.   :-0.9961   Min.   :-0.99024   Min.   :-0.9877  
+ 1st Qu.: 8.0   Class :character   1st Qu.:0.2712   1st Qu.:-0.020022   1st Qu.:-0.11207   1st Qu.:-0.9799   1st Qu.:-0.94205   1st Qu.:-0.9498  
+ Median :15.5   Mode  :character   Median :0.2770   Median :-0.017262   Median :-0.10819   Median :-0.7526   Median :-0.50897   Median :-0.6518  
+ Mean   :15.5                      Mean   :0.2743   Mean   :-0.017876   Mean   :-0.10916   Mean   :-0.5577   Mean   :-0.46046   Mean   :-0.5756  
+ 3rd Qu.:23.0                      3rd Qu.:0.2800   3rd Qu.:-0.014936   3rd Qu.:-0.10443   3rd Qu.:-0.1984   3rd Qu.:-0.03077   3rd Qu.:-0.2306  
+ Max.   :30.0                      Max.   :0.3015   Max.   :-0.001308   Max.   :-0.07538   Max.   : 0.6269   Max.   : 0.61694   Max.   : 0.6090  
+ tGravityAccMeanX  tGravityAccMeanY   tGravityAccMeanZ   tGravityAccStdX   tGravityAccStdY   tGravityAccStdZ   tBodyAccJerkMeanX tBodyAccJerkMeanY   
+ Min.   :-0.6800   Min.   :-0.47989   Min.   :-0.49509   Min.   :-0.9968   Min.   :-0.9942   Min.   :-0.9910   Min.   :0.04269   Min.   :-0.0386872  
+ 1st Qu.: 0.8376   1st Qu.:-0.23319   1st Qu.:-0.11726   1st Qu.:-0.9825   1st Qu.:-0.9711   1st Qu.:-0.9605   1st Qu.:0.07396   1st Qu.: 0.0004664  
+ Median : 0.9208   Median :-0.12782   Median : 0.02384   Median :-0.9695   Median :-0.9590   Median :-0.9450   Median :0.07640   Median : 0.0094698  
+ Mean   : 0.6975   Mean   :-0.01621   Mean   : 0.07413   Mean   :-0.9638   Mean   :-0.9524   Mean   :-0.9364   Mean   :0.07947   Mean   : 0.0075652  
+ 3rd Qu.: 0.9425   3rd Qu.: 0.08773   3rd Qu.: 0.14946   3rd Qu.:-0.9509   3rd Qu.:-0.9370   3rd Qu.:-0.9180   3rd Qu.:0.08330   3rd Qu.: 0.0134008  
+ Max.   : 0.9745   Max.   : 0.95659   Max.   : 0.95787   Max.   :-0.8296   Max.   :-0.6436   Max.   :-0.6102   Max.   :0.13019   Max.   : 0.0568186  
+ tBodyAccJerkMeanZ   tBodyAccJerkStdX  tBodyAccJerkStdY  tBodyAccJerkStdZ   tBodyGyroMeanX     tBodyGyroMeanY     tBodyGyroMeanZ     tBodyGyroStdX    
+ Min.   :-0.067458   Min.   :-0.9946   Min.   :-0.9895   Min.   :-0.99329   Min.   :-0.20578   Min.   :-0.20421   Min.   :-0.07245   Min.   :-0.9943  
+ 1st Qu.:-0.010601   1st Qu.:-0.9832   1st Qu.:-0.9724   1st Qu.:-0.98266   1st Qu.:-0.04712   1st Qu.:-0.08955   1st Qu.: 0.07475   1st Qu.:-0.9735  
+ Median :-0.003861   Median :-0.8104   Median :-0.7756   Median :-0.88366   Median :-0.02871   Median :-0.07318   Median : 0.08512   Median :-0.7890  
+ Mean   :-0.004953   Mean   :-0.5949   Mean   :-0.5654   Mean   :-0.73596   Mean   :-0.03244   Mean   :-0.07426   Mean   : 0.08744   Mean   :-0.6916  
+ 3rd Qu.: 0.001958   3rd Qu.:-0.2233   3rd Qu.:-0.1483   3rd Qu.:-0.51212   3rd Qu.:-0.01676   3rd Qu.:-0.06113   3rd Qu.: 0.10177   3rd Qu.:-0.4414  
+ Max.   : 0.038053   Max.   : 0.5443   Max.   : 0.3553   Max.   : 0.03102   Max.   : 0.19270   Max.   : 0.02747   Max.   : 0.17910   Max.   : 0.2677  
+ tBodyGyroStdY     tBodyGyroStdZ     tBodyGyroJerkMeanX tBodyGyroJerkMeanY tBodyGyroJerkMeanZ  tBodyGyroJerkStdX tBodyGyroJerkStdY tBodyGyroJerkStdZ
+ Min.   :-0.9942   Min.   :-0.9855   Min.   :-0.15721   Min.   :-0.07681   Min.   :-0.092500   Min.   :-0.9965   Min.   :-0.9971   Min.   :-0.9954  
+ 1st Qu.:-0.9629   1st Qu.:-0.9609   1st Qu.:-0.10322   1st Qu.:-0.04552   1st Qu.:-0.061725   1st Qu.:-0.9800   1st Qu.:-0.9832   1st Qu.:-0.9848  
+ Median :-0.8017   Median :-0.8010   Median :-0.09868   Median :-0.04112   Median :-0.053430   Median :-0.8396   Median :-0.8942   Median :-0.8610  
+ Mean   :-0.6533   Mean   :-0.6164   Mean   :-0.09606   Mean   :-0.04269   Mean   :-0.054802   Mean   :-0.7036   Mean   :-0.7636   Mean   :-0.7096  
+ 3rd Qu.:-0.4196   3rd Qu.:-0.3106   3rd Qu.:-0.09110   3rd Qu.:-0.03842   3rd Qu.:-0.048985   3rd Qu.:-0.4629   3rd Qu.:-0.5861   3rd Qu.:-0.4741  
+ Max.   : 0.4765   Max.   : 0.5649   Max.   :-0.02209   Max.   :-0.01320   Max.   :-0.006941   Max.   : 0.1791   Max.   : 0.2959   Max.   : 0.1932  
+ tBodyAccMagMean   tBodyAccMagStd    tGravityAccMagMean tGravityAccMagStd tBodyAccJerkMagMean tBodyAccJerkMagStd tBodyGyroMagMean  tBodyGyroMagStd  
+ Min.   :-0.9865   Min.   :-0.9865   Min.   :-0.9865    Min.   :-0.9865   Min.   :-0.9928     Min.   :-0.9946    Min.   :-0.9807   Min.   :-0.9814  
+ 1st Qu.:-0.9573   1st Qu.:-0.9430   1st Qu.:-0.9573    1st Qu.:-0.9430   1st Qu.:-0.9807     1st Qu.:-0.9765    1st Qu.:-0.9461   1st Qu.:-0.9476  
+ Median :-0.4829   Median :-0.6074   Median :-0.4829    Median :-0.6074   Median :-0.8168     Median :-0.8014    Median :-0.6551   Median :-0.7420  
+ Mean   :-0.4973   Mean   :-0.5439   Mean   :-0.4973    Mean   :-0.5439   Mean   :-0.6079     Mean   :-0.5842    Mean   :-0.5652   Mean   :-0.6304  
+ 3rd Qu.:-0.0919   3rd Qu.:-0.2090   3rd Qu.:-0.0919    3rd Qu.:-0.2090   3rd Qu.:-0.2456     3rd Qu.:-0.2173    3rd Qu.:-0.2159   3rd Qu.:-0.3602  
+ Max.   : 0.6446   Max.   : 0.4284   Max.   : 0.6446    Max.   : 0.4284   Max.   : 0.4345     Max.   : 0.4506    Max.   : 0.4180   Max.   : 0.3000  
+ tBodyGyroJerkMagMean tBodyGyroJerkMagStd fBodyAccMeanX     fBodyAccMeanY      fBodyAccMeanZ      fBodyAccStdX      fBodyAccStdY       fBodyAccStdZ    
+ Min.   :-0.99732     Min.   :-0.9977     Min.   :-0.9952   Min.   :-0.98903   Min.   :-0.9895   Min.   :-0.9966   Min.   :-0.99068   Min.   :-0.9872  
+ 1st Qu.:-0.98515     1st Qu.:-0.9805     1st Qu.:-0.9787   1st Qu.:-0.95361   1st Qu.:-0.9619   1st Qu.:-0.9820   1st Qu.:-0.94042   1st Qu.:-0.9459  
+ Median :-0.86479     Median :-0.8809     Median :-0.7691   Median :-0.59498   Median :-0.7236   Median :-0.7470   Median :-0.51338   Median :-0.6441  
+ Mean   :-0.73637     Mean   :-0.7550     Mean   :-0.5758   Mean   :-0.48873   Mean   :-0.6297   Mean   :-0.5522   Mean   :-0.48148   Mean   :-0.5824  
+ 3rd Qu.:-0.51186     3rd Qu.:-0.5767     3rd Qu.:-0.2174   3rd Qu.:-0.06341   3rd Qu.:-0.3183   3rd Qu.:-0.1966   3rd Qu.:-0.07913   3rd Qu.:-0.2655  
+ Max.   : 0.08758     Max.   : 0.2502     Max.   : 0.5370   Max.   : 0.52419   Max.   : 0.2807   Max.   : 0.6585   Max.   : 0.56019   Max.   : 0.6871  
+ fBodyAccJerkMeanX fBodyAccJerkMeanY fBodyAccJerkMeanZ fBodyAccJerkStdX  fBodyAccJerkStdY  fBodyAccJerkStdZ    fBodyGyroMeanX    fBodyGyroMeanY   
+ Min.   :-0.9946   Min.   :-0.9894   Min.   :-0.9920   Min.   :-0.9951   Min.   :-0.9905   Min.   :-0.993108   Min.   :-0.9931   Min.   :-0.9940  
+ 1st Qu.:-0.9828   1st Qu.:-0.9725   1st Qu.:-0.9796   1st Qu.:-0.9847   1st Qu.:-0.9737   1st Qu.:-0.983747   1st Qu.:-0.9697   1st Qu.:-0.9700  
+ Median :-0.8126   Median :-0.7817   Median :-0.8707   Median :-0.8254   Median :-0.7852   Median :-0.895121   Median :-0.7300   Median :-0.8141  
+ Mean   :-0.6139   Mean   :-0.5882   Mean   :-0.7144   Mean   :-0.6121   Mean   :-0.5707   Mean   :-0.756489   Mean   :-0.6367   Mean   :-0.6767  
+ 3rd Qu.:-0.2820   3rd Qu.:-0.1963   3rd Qu.:-0.4697   3rd Qu.:-0.2475   3rd Qu.:-0.1685   3rd Qu.:-0.543787   3rd Qu.:-0.3387   3rd Qu.:-0.4458  
+ Max.   : 0.4743   Max.   : 0.2767   Max.   : 0.1578   Max.   : 0.4768   Max.   : 0.3498   Max.   :-0.006236   Max.   : 0.4750   Max.   : 0.3288  
+ fBodyGyroMeanZ    fBodyGyroStdX     fBodyGyroStdY     fBodyGyroStdZ     fBodyAccMagMean   fBodyAccMagStd    fBodyBodyAccJerkMagMean
+ Min.   :-0.9860   Min.   :-0.9947   Min.   :-0.9944   Min.   :-0.9867   Min.   :-0.9868   Min.   :-0.9876   Min.   :-0.9940        
+ 1st Qu.:-0.9624   1st Qu.:-0.9750   1st Qu.:-0.9602   1st Qu.:-0.9643   1st Qu.:-0.9560   1st Qu.:-0.9452   1st Qu.:-0.9770        
+ Median :-0.7909   Median :-0.8086   Median :-0.7964   Median :-0.8224   Median :-0.6703   Median :-0.6513   Median :-0.7940        
+ Mean   :-0.6044   Mean   :-0.7110   Mean   :-0.6454   Mean   :-0.6577   Mean   :-0.5365   Mean   :-0.6210   Mean   :-0.5756        
+ 3rd Qu.:-0.2635   3rd Qu.:-0.4813   3rd Qu.:-0.4154   3rd Qu.:-0.3916   3rd Qu.:-0.1622   3rd Qu.:-0.3654   3rd Qu.:-0.1872        
+ Max.   : 0.4924   Max.   : 0.1966   Max.   : 0.6462   Max.   : 0.5225   Max.   : 0.5866   Max.   : 0.1787   Max.   : 0.5384        
+ fBodyBodyAccJerkMagStd fBodyBodyGyroMagMean fBodyBodyGyroMagStd fBodyBodyGyroJerkMagMean fBodyBodyGyroJerkMagStd
+ Min.   :-0.9944        Min.   :-0.9865      Min.   :-0.9815     Min.   :-0.9976          Min.   :-0.9976        
+ 1st Qu.:-0.9752        1st Qu.:-0.9616      1st Qu.:-0.9488     1st Qu.:-0.9813          1st Qu.:-0.9802        
+ Median :-0.8126        Median :-0.7657      Median :-0.7727     Median :-0.8779          Median :-0.8941        
+ Mean   :-0.5992        Mean   :-0.6671      Mean   :-0.6723     Mean   :-0.7564          Mean   :-0.7715        
+ 3rd Qu.:-0.2668        3rd Qu.:-0.4087      3rd Qu.:-0.4277     3rd Qu.:-0.5831          3rd Qu.:-0.6081        
+ Max.   : 0.3163        Max.   : 0.2040      Max.   : 0.2367     Max.   : 0.1466          Max.   : 0.2878 
 
 >
