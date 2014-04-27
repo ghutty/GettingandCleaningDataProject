@@ -64,14 +64,10 @@ The complete list of variables of each feature vector is available in 'features.
 * 68 Variables
 * 180 Observations
 
-####Subject - Participants Subject ID.  Total 30 Subjects
+__Subject__ - Participants Subject ID.  Total 30 Subjects
 
- Min.   : 1.0   
- 1st Qu.: 8.0   
- Median :15.5   
- Mean   :15.5   
- 3rd Qu.:23.0   
- Max.   :30.0   
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    1.0     8.0    15.5    15.5    23.0    30.0  
 
     
 ####Activity - 6 Activities
