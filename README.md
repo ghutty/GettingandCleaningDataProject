@@ -18,11 +18,11 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 ### Assumptions
 
-* Ignored raw data in __"/Inertial Signals"__ as data files available in __"/test"__ and __"/train"__ folders produce an acceptable result.  Result 10299 x 563
-* The features required are mean() and std() which will result in 66 Variables.  Total 68 Variables including __"Subject"__ and __"Activity"__.  Result 10299 x 68
+* Ignored raw data in __"/Inertial Signals"__ as data files available in __"/test"__ and __"/train"__ folders produce an acceptable result.  Result 10299 obs, 563 vars
+* The features required are mean() and std() which will result in 66 Variables.  Total 68 Variables including __Subject__ and __Activity__.  Result 10299 obs, 68 vars
 * _"Uses descriptive activity names to name the activities in the data set"_, rename column names for the features
 * _"Appropriately labels the data set with descriptive activity names."_, replace activity code to activity names as data values
-* Create tidy dataset with the average of each variable for each activity and each subject.  Result 30 Subjects x 6 activities with 68 variables
+* Create tidy dataset with the average of each variable for each activity (6) and each subject (30).  Result 30 Subjects x 6 activities = 180 obs, 68 vars
 
 
 ### Requirements
