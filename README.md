@@ -65,7 +65,7 @@ Creates a second, independent tidy data set with the average of each variable fo
  
 * Load __*reshape2*__ library.
 * Used ```order()``` to have a better sorting view of the data
-* Used ```melt()``` to prepare the measures for aggregation for __Subject__ and __Activity__
+* Used ```melt()``` to prepare the measures for aggregation for __Subject__ and __Activity__.  Removed row names.
 * Used ```dcast()``` to get the average values using ```mean()``` on the measures based on __Subject__ and __Activity__
 * Used ```write.table()``` to save the tidy dataset as __tidydata.txt__
 
