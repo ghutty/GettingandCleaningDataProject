@@ -1,4 +1,4 @@
-## README.m
+## README.md
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. 
 
@@ -21,6 +21,7 @@ Please submit a link to a Github repo with the code for performing your analysis
 ### run_analysis.R
 
 1. Merges the training and the test sets to create one data set.
+
 ..* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
 ..* Used ```read.table()``` and ```colnames()``` to rename column names
 ..* Used ```rbind()``` to merge __test__ and __train__ data frames.
