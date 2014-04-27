@@ -3,6 +3,8 @@
 
 ### Source
 
+
+[Site description where data was obtained](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 [getdata-projectfiles-UCI HAR Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
@@ -17,8 +19,7 @@
 -----------
 
 ###tidydata
------------
------------
+
 
 * 68 Variables
 * 180 Observations
