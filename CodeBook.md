@@ -56,15 +56,24 @@ __2   Activity__ - 6 Activities
 * WALKING UPSTAIRS(30,17%)
 
 __3   tBodyAccMeanX__ - 
+
 __4   tBodyAccMeanY__ - 
+
 __5   tBodyAccMeanZ__ - 
+
 __6   tBodyAccStdX__ - 
-__7   tBodyAccStdY__ - __ - 
+
+__7   tBodyAccStdY__ -
+
 __8   tBodyAccStdZ__ - 
-__9   tGravityAccMeanX__ - 
-__10  tGravityAccMeanY__ - 
-__11  tGravityAccMeanZ__ - 
-__12  tGravityAccStdX__ - 
+__9   tGravityAccMeanX__ -
+ 
+__10  tGravityAccMeanY__ -
+ 
+__11  tGravityAccMeanZ__ -
+ 
+__12  tGravityAccStdX__ -
+ 
 __13  tGravityAccStdY__ - 
 __14  tGravityAccStdZ__ - 
 __15  tBodyAccJerkMeanX__ - 
