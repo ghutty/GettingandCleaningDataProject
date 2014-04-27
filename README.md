@@ -9,7 +9,6 @@ The purpose of this project is to demonstrate your ability to collect, work with
 [getdata-projectfiles-UCI HAR Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
-
 ### Repository Files:
 
 * README.md
@@ -17,16 +16,26 @@ The purpose of this project is to demonstrate your ability to collect, work with
 * run_analysis.R
 
 
+### Assumptions
+
+* Ignored raw data in __"/Inertial Signals"__ as data files available in __"/test"__ and __"/train"__ folders produce an acceptable result.  Result 10299 x 563
+* The features required are mean() and std() which will result in 66 Variables.  Total 68 Variables including __"Subject"__ and __"Activity"__.  Result 10299 x 68
+* _"Uses descriptive activity names to name the activities in the data set"_, rename column names for the features
+* _"Appropriately labels the data set with descriptive activity names."_, replace activity code to activity names as data values
+* Create tidy dataset with the average of each variable for each activity and each subject.  Result 30 Subjects x 6 activities with 68 variables
+
+
 ### Requirements
 
-1. Download __"getdata-projectfiles-UCI HAR Dataset.zip"__ from the link above.
-2. Unzip __"getdata-projectfiles-UCI HAR Dataset.zip"__
-3. Place __"run_analysis.R"__ R script in __"UCI HAR Dataset"__ folder where __"test"__ and __"train"__ folders reside.
+a. Download "getdata-projectfiles-UCI HAR Dataset.zip" from the link above.
+b. Unzip "getdata-projectfiles-UCI HAR Dataset.zip"
+c. Place "run_analysis.R" R script in "UCI HAR Dataset" folder where "test" and "train" folders reside.
+
 
 
 ### run_analysis.R
 
-Merges the training and the test sets to create one data set.
+1. Merges the training and the test sets to create one data set.
 
 
 * Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
@@ -34,25 +43,25 @@ Merges the training and the test sets to create one data set.
 * Used ```rbind()``` to merge __test__ and __train__ data frames.
 
 
-Extracts only the measurements on the mean and standard deviation for each measurement.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
 * Used ```grep()``` to select only __Subject__, __Activity__, __*mean()*__ and __*std()*__ columns.
 * Used data frame selecting (Keeping) Variables.
 
 
-Uses descriptive activity names to name the activities in the data set
+3. Uses descriptive activity names to name the activities in the data set
 
 * Used ```gsub()``` to remove __-__, __(__ and __)__
 * Used ```gsub()``` to replace column names __mean__ to __Mean__ and __std__ and __Std__
 * Used ```colnames()``` to rename column names
 
-Appropriately labels the data set with descriptive activity names.
+4. Appropriately labels the data set with descriptive activity names.
  
 * Used ```read.table()``` to add a data frame to be used as activity name values
 * Used ```match()``` to replace the activity code with activity name values
 * Used ```gsub()``` to replace __underscores__ to __spaces__
 
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  
 * Load __*reshape2*__ library.
 * Used ```order()``` to have a better sorting view of the data
