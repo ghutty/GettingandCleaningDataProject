@@ -17,6 +17,12 @@ The purpose of this project is to demonstrate your ability to collect, work with
 * run_analysis.R
 
 
+### Requirements
+
+1. Download __"UCI HAR Dataset.zip"__ from the link above.
+2. Unzip __"UCI HAR Dataset.zip"__
+3. Place __run_analysis.R__ R script in __"UCI HAR Dataset"__ folder where __"test"__ and __"train"__ folders reside.
+
 
 ### run_analysis.R
 
