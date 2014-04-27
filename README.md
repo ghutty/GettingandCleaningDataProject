@@ -2,7 +2,7 @@
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. 
 
-### Reference Links
+### Source
 
 [Site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
