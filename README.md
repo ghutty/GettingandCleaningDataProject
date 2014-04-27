@@ -22,9 +22,13 @@ Please submit a link to a Github repo with the code for performing your analysis
 
 1. Merges the training and the test sets to create one data set.
 
+
 ..* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
+
 ..* Used ```read.table()``` and ```colnames()``` to rename column names
+
 ..* Used ```rbind()``` to merge __test__ and __train__ data frames.
+
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 ..* Used ```grep()``` to select only __Subject__, __Activity__, __mean()__ and __std()__ columns.
