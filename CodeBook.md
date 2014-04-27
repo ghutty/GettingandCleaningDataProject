@@ -55,69 +55,71 @@ __2   Activity__ - 6 Activities
 * WALKING DOWNSTAIRS(30,17%)
 * WALKING UPSTAIRS(30,17%)
 
-####3   tBodyAccMeanX
-####4   tBodyAccMeanY
-####5   tBodyAccMeanZ
-####6   tBodyAccStdX
-####7   tBodyAccStdY
-####8   tBodyAccStdZ
-####9   tGravityAccMeanX
-####10  tGravityAccMeanY
-####11  tGravityAccMeanZ
-####12  tGravityAccStdX
-####13  tGravityAccStdY
-####14  tGravityAccStdZ
-####15  tBodyAccJerkMeanX
-####16  tBodyAccJerkMeanY
-####17  tBodyAccJerkMeanZ
-####18  tBodyAccJerkStdX
-####19  tBodyAccJerkStdY
-####20  tBodyAccJerkStdZ
-####21  tBodyGyroMeanX
-####22  tBodyGyroMeanY
-####23  tBodyGyroMeanZ
-####24  tBodyGyroStdX
-####25  tBodyGyroStdY
-####26  tBodyGyroStdZ
-####27  tBodyGyroJerkMeanX
-####28  tBodyGyroJerkMeanY
-####29  tBodyGyroJerkMeanZ
-####30  tBodyGyroJerkStdX
-####31  tBodyGyroJerkStdY
-####32  tBodyGyroJerkStdZ
-####33  tBodyAccMagMean
-####34  tBodyAccMagStd
-####35  tGravityAccMagMean
-####36  tGravityAccMagStd
-####37  tBodyAccJerkMagMean
-####38  tBodyAccJerkMagStd
-####39  tBodyGyroMagMean
-####40  tBodyGyroMagStd
-####41  tBodyGyroJerkMagMean
-####42  tBodyGyroJerkMagStd
-####43  fBodyAccMeanX
-####44  fBodyAccMeanY
-####45  fBodyAccMeanZ
-####46  fBodyAccStdX
-####47  fBodyAccStdY
-####48  fBodyAccStdZ
-####49  fBodyAccJerkMeanX
-####50  fBodyAccJerkMeanY
-####51  fBodyAccJerkMeanZ
-####52  fBodyAccJerkStdX
-####53  fBodyAccJerkStdY
-####54  fBodyAccJerkStdZ
-####55  fBodyGyroMeanX
-####56  fBodyGyroMeanY
-####57  fBodyGyroMeanZ
-####58  fBodyGyroStdX
-####59  fBodyGyroStdY
-####60  fBodyGyroStdZ
-####61  fBodyAccMagMean
-####62  fBodyAccMagStd
-####63  fBodyBodyAccJerkMagMean
-####64  fBodyBodyAccJerkMagStd
-####65  fBodyBodyGyroMagMean
-####66  fBodyBodyGyroMagStd
-####67  fBodyBodyGyroJerkMagMean
-####68  fBodyBodyGyroJerkMagStd
+__3   tBodyAccMeanX__ - 
+__4   tBodyAccMeanY__ - 
+__5   tBodyAccMeanZ__ - 
+__6   tBodyAccStdX__ - 
+__7   tBodyAccStdY__ - __ - 
+__8   tBodyAccStdZ__ - 
+__9   tGravityAccMeanX__ - 
+__10  tGravityAccMeanY__ - 
+__11  tGravityAccMeanZ__ - 
+__12  tGravityAccStdX__ - 
+__13  tGravityAccStdY__ - 
+__14  tGravityAccStdZ__ - 
+__15  tBodyAccJerkMeanX__ - 
+__16  tBodyAccJerkMeanY__ - 
+__17  tBodyAccJerkMeanZ__ - 
+__18  tBodyAccJerkStdX__ - 
+__19  tBodyAccJerkStdY__ - 
+__20  tBodyAccJerkStdZ__ - 
+__21  tBodyGyroMeanX__ - 
+__22  tBodyGyroMeanY__ - 
+__23  tBodyGyroMeanZ__ - 
+__24  tBodyGyroStdX__ - 
+__25  tBodyGyroStdY__ - 
+__26  tBodyGyroStdZ__ - 
+__27  tBodyGyroJerkMeanX__ - 
+__28  tBodyGyroJerkMeanY__ - 
+__29  tBodyGyroJerkMeanZ__ - 
+__30  tBodyGyroJerkStdX__ - 
+__31  tBodyGyroJerkStdY__ - 
+__32  tBodyGyroJerkStdZ__ - 
+__33  tBodyAccMagMean__ - 
+__34  tBodyAccMagStd__ - 
+__35  tGravityAccMagMean__ - 
+__36  tGravityAccMagStd__ - 
+__37  tBodyAccJerkMagMean__ - 
+__38  tBodyAccJerkMagStd__ - 
+__39  tBodyGyroMagMean__ - 
+__40  tBodyGyroMagStd__ - 
+__41  tBodyGyroJerkMagMean__ - 
+__42  tBodyGyroJerkMagStd__ - 
+__43  fBodyAccMeanX__ - 
+__44  fBodyAccMeanY__ - 
+__45  fBodyAccMeanZ__ - 
+__46  fBodyAccStdX__ - 
+__47  fBodyAccStdY__ - 
+__48  fBodyAccStdZ__ - 
+__49  fBodyAccJerkMeanX__ - 
+__50  fBodyAccJerkMeanY__ - 
+__51  fBodyAccJerkMeanZ__ - 
+__52  fBodyAccJerkStdX__ - 
+__53  fBodyAccJerkStdY__ - 
+__54  fBodyAccJerkStdZ__ - 
+__55  fBodyGyroMeanX__ - 
+__56  fBodyGyroMeanY__ - 
+__57  fBodyGyroMeanZ__ - 
+__58  fBodyGyroStdX__ - 
+__59  fBodyGyroStdY__ - 
+__60  fBodyGyroStdZ__ - 
+__61  fBodyAccMagMean__ - 
+__62  fBodyAccMagStd__ - 
+__63  fBodyBodyAccJerkMagMean__ - 
+__64  fBodyBodyAccJerkMagStd__ - 
+__65  fBodyBodyGyroMagMean__ - 
+__66  fBodyBodyGyroMagStd__ - 
+__67  fBodyBodyGyroJerkMagMean__ - 
+__68  fBodyBodyGyroJerkMagStd__ - 
+
+-----------
