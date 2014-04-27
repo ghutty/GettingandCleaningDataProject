@@ -23,35 +23,36 @@ Please submit a link to a Github repo with the code for performing your analysis
 1. Merges the training and the test sets to create one data set.
 
 
-..* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
-
-..* Used ```read.table()``` and ```colnames()``` to rename column names
-
-..* Used ```rbind()``` to merge __test__ and __train__ data frames.
+	* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
+	* Used ```read.table()``` and ```colnames()``` to rename column names
+	* Used ```rbind()``` to merge __test__ and __train__ data frames.
 
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-..* Used ```grep()``` to select only __Subject__, __Activity__, __mean()__ and __std()__ columns.
-..* Used data frame selecting (Keeping) Variables.
+
+	* Used ```grep()``` to select only __Subject__, __Activity__, __*mean()*__ and __*std()*__ columns.
+	* Used data frame selecting (Keeping) Variables.
 
 
 3. Uses descriptive activity names to name the activities in the data set
-..* Used ```gsub()``` to remove __-__, __(__ and __)__
-..* Used ```gsub()``` to replace column names __mean__ to __Mean__ and __std__ and __Std__
-..* Used ```colnames()``` to rename column names
 
-4. Appropriately labels the data set with descriptive activity names. 
-..* Used ```read.table()``` to add a data frame to be used as activity name values
-..* Used ```match()``` to replace the activity code with activity name values
-..* Used ```gsub()``` to replace __underscores__ to __spaces__
+	* Used ```gsub()``` to remove __-__, __(__ and __)__
+	* Used ```gsub()``` to replace column names __mean__ to __Mean__ and __std__ and __Std__
+	* Used ```colnames()``` to rename column names
 
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-..* Load __reshape__ library.
-..* Used ```order()``` to have a better sorting view of the data
-..* Used ```melt()``` to prepare the measures for aggregation for __Subject__ and __Activity__
-..* Used ```dcast()``` to get the average values using ```mean()``` on the measures based on __Subject__ and __Activity__
-..* Used ```write.table()``` to save the tidy dataset as __tidydata.txt__
+4. Appropriately labels the data set with descriptive activity names.
+ 
+	* Used ```read.table()``` to add a data frame to be used as activity name values
+	* Used ```match()``` to replace the activity code with activity name values
+	* Used ```gsub()``` to replace __underscores__ to __spaces__
 
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+ 
+	* Load __reshape__ library.
+	* Used ```order()``` to have a better sorting view of the data
+	* Used ```melt()``` to prepare the measures for aggregation for __Subject__ and __Activity__
+	* Used ```dcast()``` to get the average values using ```mean()``` on the measures based on __Subject__ and __Activity__
+	* Used ```write.table()``` to save the tidy dataset as __tidydata.txt__
 
 
 ### CodeBook.md
@@ -62,6 +63,7 @@ Used the following to generate code book.
 install.packages("Hmisc")
 library(Hmisc)
 describe(tidydata)
+
 
 
 
