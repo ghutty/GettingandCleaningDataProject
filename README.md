@@ -48,7 +48,7 @@ Appropriately labels the data set with descriptive activity names.
 
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  
-* Load __reshape__ library.
+* Load __*reshape2*__ library.
 * Used ```order()``` to have a better sorting view of the data
 * Used ```melt()``` to prepare the measures for aggregation for __Subject__ and __Activity__
 * Used ```dcast()``` to get the average values using ```mean()``` on the measures based on __Subject__ and __Activity__
