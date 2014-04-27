@@ -5,10 +5,10 @@ The purpose of this project is to demonstrate your ability to collect, work with
 ### Reference Links
 
 [Site description where data was obtained](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-[UCI HAR Data.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+
+[UCI HAR Data.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
-Please submit a link to a Github repo with the code for performing your analysis. The code should have a file run_analysis.R in the main directory that can be run as long as the Samsung data is in your working directory. The output should be the tidy data set you submitted for part 1. You should include a README.md in the repo describing how the script works. 
 
 ### Repository Files:
 
@@ -20,7 +20,7 @@ Please submit a link to a Github repo with the code for performing your analysis
 
 ### run_analysis.R
 
-1. Merges the training and the test sets to create one data set.
+Merges the training and the test sets to create one data set.
 
 
 	* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
@@ -28,25 +28,25 @@ Please submit a link to a Github repo with the code for performing your analysis
 	* Used ```rbind()``` to merge __test__ and __train__ data frames.
 
 
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
+Extracts only the measurements on the mean and standard deviation for each measurement.
 
 	* Used ```grep()``` to select only __Subject__, __Activity__, __*mean()*__ and __*std()*__ columns.
 	* Used data frame selecting (Keeping) Variables.
 
 
-3. Uses descriptive activity names to name the activities in the data set
+Uses descriptive activity names to name the activities in the data set
 
 	* Used ```gsub()``` to remove __-__, __(__ and __)__
 	* Used ```gsub()``` to replace column names __mean__ to __Mean__ and __std__ and __Std__
 	* Used ```colnames()``` to rename column names
 
-4. Appropriately labels the data set with descriptive activity names.
+Appropriately labels the data set with descriptive activity names.
  
 	* Used ```read.table()``` to add a data frame to be used as activity name values
 	* Used ```match()``` to replace the activity code with activity name values
 	* Used ```gsub()``` to replace __underscores__ to __spaces__
 
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  
 	* Load __reshape__ library.
 	* Used ```order()``` to have a better sorting view of the data
@@ -60,9 +60,12 @@ Please submit a link to a Github repo with the code for performing your analysis
 Code book that describes the variables, the data, and any transformations or work that you performed to clean up the data
 Used the following to generate code book.
 
-install.packages("Hmisc")
-library(Hmisc)
-describe(tidydata)
+	install.packages("Hmisc")
+
+	library(Hmisc)
+
+	describe(tidydata)
+
 
 
 
