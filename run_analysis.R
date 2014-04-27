@@ -3,7 +3,7 @@
 ###
 ### Requirements
 ### * Download "getdata-projectfiles-UCI HAR Dataset.zip" from the link above.
-###   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+###   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 ### * Unzip "getdata-projectfiles-UCI HAR Dataset.zip"
 ### * Place "run_analysis.R" R script in "UCI HAR Dataset" folder where "test" and "train" folders reside.
 
