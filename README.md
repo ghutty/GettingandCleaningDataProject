@@ -23,9 +23,9 @@ The purpose of this project is to demonstrate your ability to collect, work with
 Merges the training and the test sets to create one data set.
 
 
-	* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
-	* Used ```read.table()``` and ```colnames()``` to rename column names
-	* Used ```rbind()``` to merge __test__ and __train__ data frames.
+	..* Used ```read.table()``` and ```cbind()``` to create __test__ and __train__ data frames.
+	..* Used ```read.table()``` and ```colnames()``` to rename column names
+	..* Used ```rbind()``` to merge __test__ and __train__ data frames.
 
 
 Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -61,9 +61,7 @@ Code book that describes the variables, the data, and any transformations or wor
 Used the following to generate code book.
 
 	install.packages("Hmisc")
-
 	library(Hmisc)
-
 	describe(tidydata)
 
 
